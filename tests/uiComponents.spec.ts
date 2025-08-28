@@ -73,7 +73,7 @@ test.describe('Toaster page', () => {
     })
 })
 
-test('Lists and Dropdown', async ({ page }) => {
+test.only('Lists and Dropdown', async ({ page }) => {
   const dropDownMenu = page.locator('ngx-header nb-select');
   const optionList = page.locator('nb-option-list nb-option');
   const header = page.locator('nb-layout-header');
